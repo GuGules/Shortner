@@ -8,22 +8,25 @@ create table campagne(
     name varchar(255) NOT NULL unique,
     date_creation timestamp DEFAULT CURRENT_TIMESTAMP,
     lien_cible text NOT NULL
-)
+);
 
 create table origine_id (
     id int PRIMARY KEY AUTO_INCREMENT,
     libelle varchar(50) not null
-)
+);
 
 create table visite(
     id int PRIMARY key AUTO_INCREMENT,
     date_visite timestamp,
     id_campagne int REFERENCES campagne(id),
     origine_id int 
-)
+);
 
 create table config(
     id int PRIMARY KEY AUTO_INCREMENT,
     nom varchar(50) not null,
     valeur varchar(255) not null
-)
+);
+
+create user 'shortner'@'localhost' identified by 'shortner_pw';
+grant all privileges on shortner_db.* to 'shortner'@'localhost';

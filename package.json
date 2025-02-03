@@ -1,0 +1,21 @@
+{
+  "name": "shortner",
+  "version": "1.0.0",
+  "description": "Shortner est un raccourcisseur d'url open-source développé en PHP. Il utilise un système de campagne lui permettant de gérer un système de communication.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuGules/Shortner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuGules/Shortner/issues"
+  },
+  "homepage": "https://github.com/GuGules/Shortner#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3"
+  }
+}
